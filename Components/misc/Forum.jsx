@@ -42,35 +42,47 @@ const Forum = ({ data }) => {
 
           <div className="md:justify-normal md:gap-6 flex items-center justify-between">
             <button className="flex gap-1 items-center">
+              {
+                data.like===true?
+                <img
+                src="/icons/like-fill.png"
+                alt=""
+                className="w-3 h-3"
+                
+              />:
               <img
                 src="/icons/like-holo.png"
                 alt=""
                 className="w-3 h-3"
-                srcset=""
+                
               />
-              2k
+
+
+
+              }
+              {data.view}k
             </button>
             <button className="flex gap-1 items-center">
-              <img src="/icons/look.png" alt="" className="w-3 h-3" srcset="" />
-              2k
+              <img src="/icons/look.png" alt="" className="w-3 h-3" />
+              {data.likeNo}k
             </button>
             <button className="flex gap-1 items-center">
               <img
                 src="/icons/message-holo.png"
                 alt=""
                 className="w-3 h-3"
-                srcset=""
+                
               />
-              2k
+              {data.commentsNo}k Comments
             </button>
             <button className="flex gap-1 items-center">
               <img
                 src="/icons/share.png"
                 alt=""
                 className="w-3 h-3"
-                srcset=""
+                
               />
-              2k
+              Share
             </button>
           </div>
         </div>

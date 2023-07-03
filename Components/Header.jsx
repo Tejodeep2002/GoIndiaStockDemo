@@ -5,6 +5,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import data from "@/DataBase/db";
 
 const Header = () => {
   return (
@@ -51,16 +52,15 @@ const Header = () => {
       </div>
 
       <div className="md:h-5 relative w-full h-6 bg-black text-white overflow-hidden ">
-        <div className="relative text-sm flex justify-center items-center animate-[infloop_30s_linear_infinite]">
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facilis
-          </span>
-          <span>
-            tenetur ut vero, perspiciatis fugit excepturi cupiditate nam quaerat
-          </span>
-          <span>
-            obcaecati autem optio nostrum temporibus! Voluptates quisquam
-          </span>
+        <div className="relative h-full text-sm flex justify-center items-center animate-[infloop_30s_linear_infinite]">
+          {data.stocks.map((item,index) => (
+            <span key={index} className=" h-full flex flex-row gap-14 justify-center mx-14">
+              <span>{item.name}</span>
+              <span>{item.price}</span>
+              <span className="text-green-500">{item.share}%</span>
+            </span>
+          ))}
+          
         </div>
       </div>
     </div>

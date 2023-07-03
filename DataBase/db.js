@@ -36,9 +36,6 @@ const data = {
     {
       image: "/companies/datapatterns.png",
     },
-   
-   
-    
   ],
   market: [
     {
@@ -131,6 +128,45 @@ const data = {
       commentsNo: 2,
       sector: 1,
     },
+  ],
+  stocks: [
+    {
+      name: "NIFTY BANK",
+      price: 41559.4,
+      share: 0.01,
+    },
+    {
+      name: "BAJFINANCE",
+      price: 6434.50,
+      share: 0.30,
+    },
+    {
+      name: "BHARTIARTIL",
+      price: 771.95,
+      share: 0.69,
+    },
+    {
+      name: "HDFCBANK",
+      price: 1657.10,
+      share: 0.40,
+    },
+    {
+      name: "HINDUNILVR",
+      price: 2577.50,
+      share: 0.36,
+    },
+    {
+      name: "BHARTIARTIL",
+      price: 771.95,
+      share: 0.69,
+    },
+    {
+      name: "HDFCBANK",
+      price: 1657.10,
+      share: 0.40,
+    },
+
+    
   ],
 };
 
