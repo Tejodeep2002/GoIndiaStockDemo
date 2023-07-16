@@ -1,5 +1,5 @@
-"use client";
-import React, { useRef, useState } from "react";
+"use client"
+import React, {  useState } from "react";
 import FeaturedCircles from "./misc/FeaturedCircles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

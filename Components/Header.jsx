@@ -1,11 +1,7 @@
-"use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+
 import React from "react";
 import data from "@/DataBase/db";
+import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -16,7 +12,7 @@ const Header = () => {
             <img
               src="/logos/logewithname.png"
               className="md:w-16 w-14 "
-              alt=""
+              alt="logo"
             />
           </button>
           <span className="sm:w-[32rem] md:h-8 w-[80%] h-9 flex justify-center items-center bg-gray-300 rounded-md">
